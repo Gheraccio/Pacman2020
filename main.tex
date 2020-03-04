@@ -1,7 +1,11 @@
 \documentclass{article}
 
+\usepackage{geometry}
 \usepackage{graphicx}
 \usepackage{nopageno}
+\usepackage{tikz}
+\usepackage{float}
+\usetikzlibrary{shapes.callouts}
 
 \title{TODO: Title}
 \author{Anonymous Authors}
@@ -59,6 +63,16 @@ We have discovered what we call the ``disc–sphere duality''.
 
 \section{Flat and spherical earth are very different views of the world}
 \section{Pacman says: ``Are they though?''}
+\begin{figure}[H]
+  \begin{tikzpicture}
+    % https://tex.stackexchange.com/questions/428967/pacman-circle-in-tikz
+    \draw[thick,fill=yellow]
+      (0,0) -- (30:1cm) arc (30:330:1cm) -- cycle;
+    \fill (0,0.66) circle (1.5mm);
+    \node[rectangle callout, callout relative pointer={(-0.5cm,-0.04cm)},
+        fill=blue!30] at (3,0.3) {\large Are they though?};
+  \end{tikzpicture}
+\end{figure}
 \section{No they aren't}
 \section{Conclusion and Future Work}
 
