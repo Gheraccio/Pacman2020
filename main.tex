@@ -8,6 +8,7 @@
 \usepackage{tikz}
 \usepackage{float}
 \usepackage{ulem}
+\usepackage{subcaption}
 \usetikzlibrary{shapes.callouts}
 
 \title{The Pacman Effect and the Disc-Sphere Duality}
@@ -68,6 +69,22 @@ We have discovered what we call the ``disc-sphere duality''.
 
 \section{Flat and spherical earth are very different views of the world}
 Try and play Ultimate with a football, or football with a flying disc. You silly.
+
+\begin{figure}
+  \begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/football.png}
+    \caption{A Football}
+    \label{fig:football}
+  \end{subfigure}
+  \begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/frisbee.png}
+    \caption{Ultimate Frisbee, with a Disc}
+    \label{fig:frisbee}
+  \end{subfigure}
+  \caption{Flat and Spherical Objects are Different}
+\end{figure}
 \section{Pacman says: ``Are they though?''}
 \begin{figure}[H]
   \begin{tikzpicture}
