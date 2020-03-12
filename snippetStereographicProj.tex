@@ -1,0 +1,65 @@
+%\documentclass[11pt,reqno]{amsart}
+
+% packages
+
+%\input{mypreamble.tex}
+
+
+
+% THEOREM Environments ---------------------------------------------------
+
+\newtheorem{theorem}{Theorem}[section]
+ \newtheorem{corollary}[theorem]{Corollary}
+ \newtheorem{lemma}[theorem]{Lemma}
+ \newtheorem{proposition}[theorem]{Proposition}
+ \newtheorem{conjecture}{Conjecture}
+  \newtheorem{question}{\sc Question}
+
+  \theoremstyle{definition}
+ \newtheorem{definition}[theorem]{Definition}
+ \newtheorem{example}[theorem]{Example}
+
+ \theoremstyle{remark}
+ \newtheorem{remark}[theorem]{Remark}
+ 
+ \renewcommand{\O}{\mathrm{O}}
+\numberwithin{equation}{section}
+
+
+%\begin{document}
+ 
+ 
+We show that the closed disc with the boundary identified to a point (with the quotient topology induced by the topology of the plane) and the sphere (with its natural Euclidean topology) are homeomorphic topological manifolds. In fact, the homeomorphism can be used to transfer the differential structure of the sphere to the disc with the boundary identified to a point.
+
+Our reference is [Munkres], but the background provided by any textbook in basic topology will suffice.
+
+We set the following notation:
+\begin{itemize}
+\item $\bbD = \{ (x,y) \in \bbR^2 : x^2 + y^2 < 1\}$ is the (open) disc;
+\item $\bar{\bbD} = \{ (x,y) \in \bbR^2 : x^2 + y^2 \leq 1\}$ is the closed disc, with the topology induced by $\bbR^2$;
+ \item $\bbS^2 = \{ (x,y,z) \in \bbR^3 : x^2 + y^2 + z^2 = 1\}$ is the sphere;
+\end{itemize}
+
+Let $\sim$ be the equivalence relation on $\bar{\bbD}$ which identifies the boundary to a point; write $[\partial]$ for the equivalence class of the boundary. We have $\bar{\bbD}/\sim = \bbD \cup [\partial]$.
+
+The fact that $\bar{\bbD} / \sim$ is homeomorphic to a sphere is an immediate consequence of the fact that they can both be identified with the $1$-point identification of the disc. We give an explicit homeomorphism, using the stereographic projection of the sphere.
+
+Recall the \emph{stereographic projection}
+\begin{align*}
+ \Sigma : \bbS^2 \setminus \{ (0,0,1) \} &\to \bbR^2 \\
+ (x,y,z) &\mapsto \left( \frac{x}{1-z}, \frac{y}{1-z} \right) .
+\end{align*}
+Then $\Sigma$ homeomorphically maps $\bbS^2 \setminus \{ (0,0,1) \}$ onto $\bbR^2$. This homeomorphism extends to the one points compactifications setting $\Sigma( (0,0,1) ) = \infty$, where $\infty$ is the point at infinity of $\bbR^2$.
+
+The plane $\bbR^2$ is homeomorphic to the unit disc via a two dimensional tangent map and the homeomorphism extends to the one point compactifications:
+\begin{align*}
+ \tan : &\bbR^2 \cup \{ \infty\} \to \bar{\bbD} \\
+&\left\{ \begin{array}{llll}
+ (x,y) &\mapsto &\frac{(x,y)}{x^2 + y^2} \cdot \frac{2}{\pi}\arctan(x^2 + y^2) & \text{ if $(x,y) \in \bbR^2$, $(x,y) \neq (0,0)$} \\
+ (0,0) &\mapsto &(0,0)\\
+ \infty &\mapsto &[\partial].
+        \end{array}\right.
+\end{align*}
+
+
+%\end{document}
