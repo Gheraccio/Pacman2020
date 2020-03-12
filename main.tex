@@ -64,17 +64,20 @@ of them fully explains the phenomena of \sout{light} Earth, but together they do
 
 We have discovered what we call the ``disc-sphere duality''.
 
-\begin{figure}[ht]
+\begin{figure}[t]
   \centering
   \includegraphics{images/pacman.png}
-  \caption{A Screenshot of Pacman}
+  \caption{A Screenshot of Pacman. When reaching the leftmost part of the
+    screen, Pacman wraps to the rightmost part of the screen.}
   \label{fig:pacman-screenshot}
 \end{figure}
 
 \section{Flat and Spherical Earth are Very Different Views of the World}
 Try and play Ultimate with a football, or football with a flying disc. You silly.
+Readers are encouraged to use their imagination, or alternatively refer to
+\cref{fig:football-vs-frisbee}.
 
-\begin{figure}
+\begin{figure}[t]
   \begin{subfigure}{0.5\textwidth}
     \centering
     \includegraphics[width=0.5\textwidth]{images/football.png}
@@ -87,11 +90,12 @@ Try and play Ultimate with a football, or football with a flying disc. You silly
     \caption{Ultimate Frisbee, with a Disc}
     \label{fig:frisbee}
   \end{subfigure}
-  \caption{Flat and Spherical Objects are Different}
+  \caption{Flat and spherical objects are different.}
+  \label{fig:football-vs-frisbee}
 \end{figure}
 
 \section{Pacman Says: ``Are they though?''}
-\begin{figure}[H]
+\begin{wrapfigure}{l}{0.4\textwidth}
   \begin{tikzpicture}
     % https://tex.stackexchange.com/questions/428967/pacman-circle-in-tikz
     \draw[thick,fill=yellow]
@@ -100,7 +104,7 @@ Try and play Ultimate with a football, or football with a flying disc. You silly
     \node[rectangle callout, callout relative pointer={(-0.5cm,-0.04cm)},
         fill=blue!30] at (3,0.3) {\large Are they though?};
   \end{tikzpicture}
-\end{figure}
+\end{wrapfigure}
 
 
 \input{snippetStereographicProj}
